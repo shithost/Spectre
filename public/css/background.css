@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        45deg,
+        #1a1a1a,
+        #2d2d2d,
+        #4d4d4d
+    );
+    color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at 10% 20%,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.05)
+    );
+    pointer-events: none;
+    z-index: 1;
+    animation: fog 8s infinite;
+}
+
+@keyframes fog {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+    100% { opacity: 0.3; }
+}
+
+header {
+    padding: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    margin: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    opacity: 0.8;
+}
+
+nav a:hover {
+    opacity: 1;
+    text-shadow: 0 0 10px white;
+}
+
+.content {
+    max-width: 800px;
+    padding: 2rem;
+    opacity: 0.9;
+}
+
+
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@font-face {
+    font-family: 'Pixel Gaming Font';
+    src: url('/font') format('truetype');
+}
