@@ -1,4 +1,4 @@
-# Spectre: A Unified Dashboard for Game Server Hosting Panels
+# Spectre
 
 Spectre is a comprehensive dashboard solution designed to integrate with multiple game server hosting panels. It provides a centralized interface to manage and monitor your game servers across different platforms.
 
