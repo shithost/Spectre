@@ -1,6 +1,21 @@
-# Spectre
-Go to the branch you want for Spectre
+# Spectre: A Unified Dashboard for Game Server Hosting Panels
 
-[Pterodactyl](https://github.com/shithost/Spectre/tree/pterodactyl)
-[Airlink](https://github.com/shithost/Spectre/tree/airlink)
-[Hydra](https://github.com/shithost/Spectre/tree/hydra)
+Spectre is a comprehensive dashboard solution designed to integrate with multiple game server hosting panels. It provides a centralized interface to manage and monitor your game servers across different platforms.
+
+## Features
+- None yet
+
+## Supported Panels
+- [Pterodactyl](https://github.com/shithost/Spectre/tree/pterodactyl) # Version: N/A
+- [Airlink](https://github.com/shithost/Spectre/tree/airlink) # Version: N/A
+- [Hydra](https://github.com/shithost/Spectre/tree/hydra) # Version: N/A
+
+## Getting Started
+1. Clone the repository
+2. Switch to the branch corresponding to your hosting panel:
+   ```bash
+   git checkout pterodactyl  # For Pterodactyl users
+   git checkout airlink     # For Airlink users
+   git checkout hydra       # For Hydra users
+
+> Better instructions coming soon
