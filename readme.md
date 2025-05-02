@@ -8,7 +8,6 @@ Spectre is a comprehensive dashboard solution designed to integrate with multipl
 ## Supported Panels
 - [Pterodactyl](https://github.com/shithost/Spectre/tree/pterodactyl) # Version: N/A
 - [Airlink](https://github.com/shithost/Spectre/tree/airlink) # Version: N/A
-- [Hydra](https://github.com/shithost/Spectre/tree/hydra) # Version: N/A
 
 ## Getting Started
 1. Clone the repository
