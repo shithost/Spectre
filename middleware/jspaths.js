@@ -6,4 +6,16 @@ module.exports = (app) => {
             headers: { 'Content-Type': 'text/javascript' },
         });
     });
+
+    app.use('/js/register', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/js/register.js'), {
+            headers: { 'Content-Type': 'text/javascript' },
+        });
+    });
+
+    app.use('/js/login', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/js/login.js'), {
+            headers: { 'Content-Type': 'text/javascript' },
+        });
+    });
 };

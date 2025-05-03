@@ -2,28 +2,31 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const dotenv = require('dotenv');
-dotenv.config();
-
+const ejs = require('ejs');
 const css = require('./middleware/csspaths');
 const js = require('./middleware/jspaths');
+const more = require('./middleware/otherpaths');
+
+const authRouter = require('./routes/auth');
+const homeRouter = require('./routes/home');
+const mainRouter = require('./routes/index');
+
+dotenv.config();
 
 css(app);
 js(app);
-
-const ejs = require('ejs');
+more(app);
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.render('index', { HOSTING_NAME: process.env.HOSTING_NAME });
-});
-
-app.get('/register', (req, res) => {
-    res.render('register', { HOSTING_NAME: process.env.HOSTING_NAME });
-});
+app.use(mainRouter);
+app.use(authRouter);
+app.use(homeRouter);
 
 app.listen(port, () => {
     console.log(`Spectre is LOCKED IN at http://localhost:${port}`);

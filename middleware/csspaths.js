@@ -12,4 +12,10 @@ module.exports = (app) => {
             headers: { 'Content-Type': 'text/css' },
         });
     });
+
+    app.use('/css/login.css', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/css/login.css'), {
+            headers: { 'Content-Type': 'text/css' },
+        });
+    });
 };
