@@ -59,6 +59,16 @@ router.post('/login', async (req, res) => {
         return res.status(400).json({ error: 'Invalid username or password' });
     }
 
+    if (!isValidPassword) {
+        return res.status(400).json({ error: 'Invalid username or password' });
+    }
+
+    res.cookie('authToken', user.id, {
+        maxAge: 900000,
+        httpOnly: true,
+        secure: false
+    });
+
     res.status(200).json({ message: 'Login successful' });
 });
 

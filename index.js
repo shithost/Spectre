@@ -6,6 +6,7 @@ const ejs = require('ejs');
 const css = require('./middleware/csspaths');
 const js = require('./middleware/jspaths');
 const more = require('./middleware/otherpaths');
+const cookieParser = require('cookie-parser');
 
 const authRouter = require('./routes/auth');
 const homeRouter = require('./routes/home');
@@ -16,6 +17,8 @@ dotenv.config();
 css(app);
 js(app);
 more(app);
+
+app.use(cookieParser());
 
 app.set('view engine', 'ejs');
 app.set('views', './views');
