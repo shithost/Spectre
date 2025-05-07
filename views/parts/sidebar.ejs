@@ -1,0 +1,18 @@
+<div class="sidebar">
+    <div class="sidebar-header">
+        <%= process.env.HOSTING_NAME %>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/" class="<%= path === '/home' ? 'active' : '' %>">Home</a></li>
+            <li><a href="/servers" class="<%= path === '/servers' ? 'active' : '' %>">Servers</a></li>
+            <li><a href="/create" class="<%= path === '/create' ? 'active' : '' %>">Start</a></li>
+            <li><a href="/earn" class="<%= path === '/earn' ? 'active' : '' %>">Earn</a></li>
+            <li><a href="/store" class="<%= path === '/store' ? 'active' : '' %>">store</a></li>
+            <li><a href="/panel" class="<%= path === '/panel' ? 'active' : '' %>">panel</a></li>
+            <li><a href="/logout" class="<%= path === '/logout' ? 'active' : '' %>">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar-profile">
+    </div>
+</div>

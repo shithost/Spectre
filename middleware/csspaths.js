@@ -18,4 +18,10 @@ module.exports = (app) => {
             headers: { 'Content-Type': 'text/css' },
         });
     });
+
+    app.use('/css/sidebar.css', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/css/sidebar.css'), {
+            headers: { 'Content-Type': 'text/css' },
+        });
+    });
 };
