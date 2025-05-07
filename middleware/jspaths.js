@@ -18,4 +18,10 @@ module.exports = (app) => {
             headers: { 'Content-Type': 'text/javascript' },
         });
     });
+
+    app.use('/js/ts', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/js/ts.js'), {
+            headers: { 'Content-Type': 'text/javascript' },
+        });
+    });
 };

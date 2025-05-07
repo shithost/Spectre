@@ -6,4 +6,10 @@ module.exports = (app) => {
             headers: { 'Content-Type': 'image/png' },
         });
     });
+
+    app.use('js/tsparticles.js', (req, res) => {
+        res.sendFile(path.join('tsparticles.js'), {
+            headers: { 'Content-Type': 'text/javascript' },
+        });
+    });
 };

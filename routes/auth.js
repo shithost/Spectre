@@ -72,4 +72,9 @@ router.post('/login', async (req, res) => {
     });
 });
 
+router.get('/logout', (req, res) => {
+    res.clearCookie('authToken');
+    res.redirect('/');
+});
+
 module.exports = router;
