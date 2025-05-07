@@ -15,6 +15,5 @@ Spectre is a comprehensive dashboard solution designed to integrate with multipl
    ```bash
    git checkout pterodactyl  # For Pterodactyl users
    git checkout airlink     # For Airlink users
-   git checkout hydra       # For Hydra users
 
 > Better instructions coming soon
