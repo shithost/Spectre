@@ -24,4 +24,10 @@ module.exports = (app) => {
             headers: { 'Content-Type': 'text/css' },
         });
     });
+
+    app.use('/css/home.css', (req, res) => {
+        res.sendFile(path.join(__dirname, '../public/css/home.css'), {
+            headers: { 'Content-Type': 'text/css' },
+        });
+    });
 };

@@ -1,0 +1,17 @@
+.game-container {
+    position: relative;
+    height: 100vh;
+    margin-left: 250px; 
+}
+
+.game-container h1 {
+    position: relative;
+    top: 20px;
+    left: 0; 
+    transform: none; 
+    text-align: right; 
+    color: #fff;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 45px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
